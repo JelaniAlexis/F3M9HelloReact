@@ -1,0 +1,42 @@
+article {
+    width: 350px;
+    height: 350px;
+    background: #A4C3B2;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    transition: 350ms;
+}
+
+article:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1000px) {
+    article:hover {
+        transform: none;
+    }
+}
+
+article header {
+    height: 25%;
+    background: #CCE3DE;
+    color: #1D1D1D;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+article header h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 200%;
+    font-weight: 600;
+}
+
+article section {
+    height: 75%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
